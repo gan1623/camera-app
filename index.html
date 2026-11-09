@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カメラアプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>カメラアプリ</h1>
+
+    <p id="status">待機中</p>
+    <p id="mode">動作モード：停止中</p>
+
+    <video id="camera" autoplay playsinline muted></video>
+
+    <div class="buttons">
+        <button id="startButton">カメラ起動</button>
+        <button id="shootButton" disabled>撮影</button>
+        <button id="stopButton" disabled>カメラ停止</button>
+    </div>
+
+    <h2>撮影した写真</h2>
+    <canvas id="photo"></canvas>
+
+    <div class="buttons">
+        <a id="saveLink" download="photo.png" hidden>写真を保存</a>
+    </div>
+
+    <script src="camera-stub.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

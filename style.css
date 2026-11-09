@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 640px;
+    background-color: black;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+canvas {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    background-color: #eeeeee;
+}
+
+#saveLink {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#saveLink[hidden] {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    min-width: 100px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button,
+    #saveLink {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+}
